@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-app-deployment
+  labels:
+    app: python-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: python-app
+  template:
+    metadata:
+      name: python-app-pod
+      labels:
+        app: python-app
+    spec:
+      containers:
+      - image: stimulatedriot/python-app:v2
+        name: python-app-container
+        ports:
+        - containerPort: 5000

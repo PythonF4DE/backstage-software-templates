@@ -1,0 +1,3 @@
+dzmJjaGQB9b31MoC
+
+kubectl get secrets -n argocd argocd-initial-admin-secret -o yaml - to get the password (it is base64 so decode it first)
