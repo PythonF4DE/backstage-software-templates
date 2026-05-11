@@ -4,7 +4,8 @@ metadata:
   name: ${{values.app_name}}
   description: Python application that displays basic info ${{values.app_name}}
   annotations:
-    github.com/project-slug: PythonF4DE/${{values.app_name}}
+    github.com/project-slug: divine-riot-enterprise/${{values.app_name}}
+    backstage.io/techdocs-ref: dir:.
 spec:
   type: service
   owner: development
