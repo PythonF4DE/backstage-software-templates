@@ -45,7 +45,7 @@ spec:
       action: publish:github
       input:
         description: This is ${{ parameters.component_id }}
-        repoUrl: github.com?owner=PythonF4DE&repo=${{parameters.component_id}}
+        repoUrl: github.com?owner=divine-riot-enterprise&repo=${{parameters.component_id}}
         protectDefaultBranch: false
 
     - id: register
